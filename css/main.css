@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Aromatron';
+    src: url('Aromatron-Regular.woff2') format('woff2'),
+        url('Aromatron-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('LouisGeorgeCafe.woff2') format('woff2'),
+        url('LouisGeorgeCafe.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('LouisGeorgeCafe-Bold.woff2') format('woff2'),
+        url('LouisGeorgeCafe-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
     --black: #000;
     --gray-dark: #545454;
@@ -26,8 +52,13 @@
     line-height: 1.666;
   }
   
-  h1,
-  h2,
+  h1 {
+      font-family: Aromatron-Regular;
+      font-weight: 400;
+  }
+  h2 {
+      font-family: LouisGeorgeCafe-Bold;
+ }  
   h3,
   h4,
   h5,
