@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4040866, 2021-04-18T14:55:25-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: GreycliffCF-Bold by Connary Fagen
+ * URL: https://www.myfonts.com/fonts/connary-fagen/greycliff-cf/bold/
+ * Copyright: Copyright © 2020 by Connary Fagen. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3da8a2");
+  
+@font-face {
+  font-family: "GreycliffCF-Bold";
+  src: url('webFonts/GreycliffCFBold/font.woff2') format('woff2'), url('webFonts/GreycliffCFBold/font.woff') format('woff');
+}
+
