@@ -9,6 +9,33 @@
 
 @font-face {
     font-family: 'Louis George Cafe\'';
+    src: url('LouisGeorgeCafeLight.woff2') format('woff2'),
+        url('LouisGeorgeCafeLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('LouisGeorgeCafe-BoldItalic.woff2') format('woff2'),
+        url('LouisGeorgeCafe-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('LouisGeorgeCafeLight-Italic.woff2') format('woff2'),
+        url('LouisGeorgeCafeLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
     src: url('LouisGeorgeCafe.woff2') format('woff2'),
         url('LouisGeorgeCafe.woff') format('woff');
     font-weight: normal;
@@ -24,6 +51,18 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Louis George Cafe\'';
+    src: url('LouisGeorgeCafe-Italic.woff2') format('woff2'),
+        url('LouisGeorgeCafe-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
 :root {
     --black: #000;
     --gray-dark: #545454;
@@ -45,25 +84,27 @@
     box-sizing: inherit;
   }
   
-  body {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    color: var(--gray-dark);
-    line-height: 1.666;
-  }
+  .body {
+    font-family: 'Louis George Cafe\'';
+    font-weight: normal;
+    font-style: normal;
+}
   
   h1 {
       font-family: Aromatron-Regular;
       font-weight: 400;
   }
-  h2 {
-      font-family: LouisGeorgeCafe-Bold;
- }  
+
+h2 {
+    font-family: 'Louis George Cafe\'';
+    font-weight: bold;
+    font-style: normal;
+}
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-sans-serif);
+    font-family: 'Louis George Cafe\'';
     font-weight: 400;
     color: var(--black);
     line-height: 1.1;
