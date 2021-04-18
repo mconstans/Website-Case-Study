@@ -137,9 +137,22 @@ h2 {
   }
   .component__code {
     border: 1px solid #ccc;
-    background: #fff;
+    background: rgb(250, 130, 17);
     margin: 0;
     position: relative;
+  }
+
+  .header__color {
+    color:rgb(123, 11, 214);
+  }
+
+  .header2__color {
+    color: snow;
+  }
+
+  .header3__font {
+    font-family: "GreycliffCF-Bold";
+    color: var(--black);
   }
   
   .component__code:before,
