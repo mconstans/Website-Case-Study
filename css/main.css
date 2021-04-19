@@ -40,7 +40,7 @@
     font-family: var(--font-serif);
     font-weight: 400;
     color: var(--gray-dark);
-    line-height: 1.666;
+    line-height: 1.0;
   }
   
   .GreycliffCFBold {
@@ -53,7 +53,7 @@ h2 {
 }
   h1 {
       font-family: Aromatron-Regular;
-      font-weight: 400;
+      font-weight: 200;
   }
 
 
@@ -67,26 +67,7 @@ h2 {
     line-height: 1.1;
   }
   
-  h1 {
-    font-size: 3.5rem;
-  }
-  
-  h2 {
-    font-size: 2.333rem;
-  }
-  h3 {
-    font-size: 1.667rem;
-  }
-  h4 {
-    font-size: 1.333rem;
-  }
-  
-  a {
-    color: var(--gray-dark);
-  }
-  
-  img,
-  video {
+  img, {
     max-width: 100%;
     display: block;
   }
@@ -95,15 +76,7 @@ h2 {
   * Utilities
   */
   
-  .visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
-  }
+
   
   .container {
     padding: 2rem;
@@ -137,24 +110,68 @@ h2 {
   }
   .component__code {
     border: 1px solid #ccc;
-    background: rgb(250, 130, 17);
+    margin: 0;
+    position: relative;
+  }
+
+  .component__code--orange {
+    border: 1px solid #ccc;
+    background: #FD5E08;
     margin: 0;
     position: relative;
   }
 
   .header__color {
-    color:rgb(123, 11, 214);
+    font-size: 6rem;
+    background: #FD5E08;
+    color: #6700b6;
   }
 
-  .header2__color {
-    color: snow;
+  .header2__font {
+    font-family: "aromatron";
+    font-size: 3.8rem;
+    font-weight: 50;
   }
 
+  .text__white {
+    color: white;
+  }
   .header3__font {
     font-family: "GreycliffCF-Bold";
-    color: var(--black);
+    background: #FD5E08;
+    color: #6700b6;
+  }
+
+  .feature__header {
+    font-family: "GreycliffCF-Bold";
+    font-size: 3rem;
+    color: #FDEB17;
+    background: #000;
+    text-align: center;
+  }
+
+  .feature__header2 {
+    font-family: "GreycliffCF-Bold";
+    color: white;
+    background: #000;
+    text-align: center;
+
+  }
+
+  .component__article {
+    content: "CODE";
+    display: block;
+    padding: 0.25rem;
+    background: #000;
   }
   
+  .text {
+    font-family: "GreycliffCF-Bold";
+    color: white;
+    font-size: 1.0rem;
+    line-height: 1.5em;
+    text-align: center;
+  }
   .component__code:before,
   .component__img:before {
     content: "CODE";
@@ -172,288 +189,9 @@ h2 {
   .component__img:before {
     content: "IMG";
   }
-  
-  .sidebar-nav {
-    background: var(--gray-light);
-  }
-  .sidebar-nav__section {
-    margin-top: 2.5rem;
-  }
-  .sidebar-nav__heading {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  .sidebar-nav__heading a {
-    text-decoration: none;
-    color: var(--black);
-  }
-  .sidebar-nav__list {
-    list-style: none;
-    padding: 0;
-  }
-  .sidebar-nav__list a {
-    text-decoration: none;
-  }
-  
-  /*************************
-  * ATOMS
-  **/
-  
-  /**
-  * Wolff Olins Wordmark
-  */
-  .wordmark {
-    margin: 0;
-    display: inline-flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    line-height: 0.85;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--black);
-  }
-  
-  /**
-  * toggle button for the main nav
-  */
-  .nav-toggle {
-    display: block;
-    border: 1px solid var(--black);
-    overflow: hidden;
-    width: 2.666rem;
-    height: 2.666rem;
-    color: transparent;
-    background: var(--black);
-    border-radius: 50%;
-  }
-  
-  /**
-  * Section Heading
-  */
-  .section-heading {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  
-  /**
-  * Action Link
-  **/
-  .action-link {
-    --arrow-width: 3.25rem;
-    display: flex;
-    align-items: center;
-    font-family: var(--font-sans-serif);
-    font-size: 1.25rem;
-    color: var(--black);
-    text-decoration: none;
-  }
-  .action-link:before {
-    content: "";
-    transform-origin: center left;
-    transition: all 0.3s;
-    display: block;
-    width: var(--arrow-width);
-    height: 1.5rem;
-    background: url("../img/arrow.svg") no-repeat left center;
-  }
-  
-  /***********
-  * MOLECULES & ORGANISMS
-  * I find the distinction somewhat arbitrary and confusion, so basically
-  * these are things made up of atoms
-  */
-  
-  /**
-  * page header including wordmark and nav
-  */
-  .page-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-  }
-  
-  /**
-  * .main-nav
-  */
-  .main-nav {
-    background: var(--black);
-    color: var(--white);
-    height: 100vh;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .main-nav__list {
-    font-family: var(--font-sans-serif);
-    line-height: 1.2;
-    padding: 0;
-    background: var(--black);
-    color: var(--white);
-    font-size: 10vmin;
-    margin: 0;
-    list-style-type: none;
-  }
-  .main-nav__list li {
-    margin: 0;
-  }
-  .main-nav__list a {
-    color: var(--white);
-    text-decoration: none;
-  }
-  
-  /**
-  * .cover-section
-  */
-  .cover-section {
-    position: relative;
-    height: 50vh;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 2rem;
-  }
-  @media (min-width: 40rem) {
-    .cover-section {
-      height: 100vh;
-    }
-  }
-  
-  .cover-section__feature-media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .cover-section__feature-media video,
-  .cover-section__feature-media img {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .cover-section__contents {
-    z-index: 10;
-  }
-  .cover-section__contents a {
-    text-decoration: none;
-    color: var(--black);
-  }
-  .cover-section__contents > a > * {
-    margin: 1rem 0;
-  }
-  
-  .cover-section__contents:hover .action-link:before {
-    transform: scaleX(1.5);
-    width: calc(var(--arrow-width) * 1.5);
-  }
-  
-  .cover-section--light,
-  .cover-section--light .section-heading,
-  .cover-section--light .action-link,
-  .cover-section--light a {
-    color: var(--white);
-  }
-  
-  .cover-section--light .action-link:before {
-    background-image: url("../img/arrow--light.svg");
-  }
-  
-  .cover-section--hero {
-    background: var(--yellow);
-    /* allow next cover to show a little, implying that
-      the user can scroll down */
-    height: calc(100vh - 3rem);
-  }
-  .cover-section--hero .cover-section__feature-media {
-    font-family: var(--font-sans-serif);
-    font-weight: 500;
-    font-size: 6vmin;
-    line-height: 1.2;
-    color: var(--black);
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /**
-  * .page-footer
-  */
-  .page-footer {
-    font-family: var(--font-sans-serif);
-    padding: 2rem;
-    line-height: 1.2;
-  }
-  .page-footer a {
-    color: var(--black);
-    text-decoration: none;
-  }
-  .page-footer .icon--circle {
-    color: var(--white);
-  }
-  .page-footer__heading {
-    margin: 0;
-    font-size: 1rem;
-  }
-  @media (min-width: 50rem) {
-    .page-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .page-footer__links {
-      display: flex;
-      align-items: center;
-    }
-    .page-footer__links > * {
-      margin: 0 1rem 0 0;
-    }
-  }
-  
-  /**
-  * .social-list
-  */
-  .social-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-  }
-  .social-list > * {
-    margin-right: 0.25rem;
-  }
-  .social-list > :last-child {
-    margin-right: 0;
-  }
-  
-  /**
-  * .social-list__item
-  */
-  .icon--circle {
-    background: var(--black);
-    width: 1.75rem;
-    height: 1.75rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.25s;
-  }
-  .icon--circle,
-  .icon--circle a {
-    color: var(--white);
-    text-decoration: none;
-  }
-  .icon--circle:hover {
-    background: var(--yellow);
-  }
-  .icon--circle:hover,
-  .icon--circle:hover a {
-    color: var(--black);
-  }
-  
+
+
+
   /*********************************
   * TEMPLATES
   **/
@@ -483,61 +221,6 @@ h2 {
     background: var(--black);
     color: var(--white);
     padding: 0.5rem;
-    position: sticky;
     top: 4.5rem;
     z-index: 10;
   }
-  .component-page .component__name {
-    position: sticky;
-    top: 6.5rem;
-    z-index: 9;
-  }
-  
-  @media (min-width: 45rem) {
-    .component-page {
-      display: grid;
-      /* why minmax(0, 1fr)?
-               See: https://css-tricks.com/preventing-a-grid-blowout/ */
-      grid-template-columns: 18rem minmax(0, 1fr);
-      grid-template-areas: "header main";
-      padding-top: 0;
-    }
-    .component-page__header {
-      position: relative;
-      padding: 1rem;
-      position: fixed;
-      overflow-y: auto;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 18rem;
-    }
-    .component-page__header-container {
-      padding: 1rem;
-    }
-  
-    .component-page__nav {
-      display: block;
-      grid-area: nav;
-      margin-top: 1.33rem;
-    }
-    .component-page__main {
-      grid-area: main;
-    }
-    .component-page__section-heading {
-      top: 0;
-    }
-    .component-page .component__name {
-      top: 2rem;
-    }
-  }
-  
-  /** .home-page template **/
-  .home-page__header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-  }
-  
