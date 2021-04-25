@@ -90,6 +90,11 @@ h2 {
     overflow: hidden;
   }
 
+  .page-footer__nav {
+    list-style: none;
+    display: inline-block;
+  }
+
   .main-nav i {
     width: 60px;
     text-align: center;
@@ -115,6 +120,8 @@ h2 {
     font-size: 1.5rem;
   }
 
+
+
 /***
   * Atoms
   */
@@ -139,6 +146,18 @@ h2 {
 }
 
 .button {
+  background: #fdeb17;
+  border: 3px solid #000;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  display: inline-block;
+  font-family: "GreycliffCF-Bold";
+  text-decoration: none;
+  text-align: center;
+}
+
+.button--primary {
   background: #fdeb17;
   border: 3px solid #000;
   border-radius: 6px;
@@ -202,11 +221,47 @@ h2 {
     border: 1px solid #ccc;
     background: #FD5E08;
     margin: 0;
-    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  .hero__text {
+    padding-left: 20px;
+    padding-right: 65px;
+  }
+  .hero__image {
+    padding-top: 15px;
   }
 
+  .component__8bit {
+    content: "CODE";
+    border: 1px solid red;
+    background: #000;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+  }
+  .bit__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .bit__image {
+    
+  }
+
+  .product__section {
+    display: block;
+    font-family: "GreycliffCF-Regular";
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
+  .product__text {
+    padding-top: 0;
+  }
   .header__color {
-    font-size: 6rem;
+    font-size: 3.4rem;
     background: #FD5E08;
     color: #6700b6;
   }
@@ -218,11 +273,12 @@ h2 {
   }
 
   .text__white {
+    font-size: 3.4rem;
     color: white;
   }
   .header3__font {
-    font-family: "GreycliffCF-Bold";
-    background: #FD5E08;
+    font-family: "GreycliffCF-Regular";
+    font-size: 1.2rem;
     color: #6700b6;
   }
 
@@ -241,13 +297,6 @@ h2 {
     text-align: center;
 
   }
-
-  .component__article {
-    content: "CODE";
-    display: block;
-    padding: 0.25rem;
-    background: #000;
-  }
   
   .text {
     font-family: "GreycliffCF-Bold";
@@ -256,6 +305,7 @@ h2 {
     line-height: 1.5em;
     text-align: center;
   }
+
   .component__code:before,
   .component__img:before {
     content: "CODE";
