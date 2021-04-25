@@ -90,8 +90,76 @@ h2 {
     overflow: hidden;
   }
 
-  .page-footer__nav {
+  
+  .page__footer {
+    text-align: center;
+    font-size: 1.5rem;
+    background: black;
+    color: white;
+    padding:  10px;
+    line-height: 0.8;
+  }
+  .footer__nav {
+    background: black;
+  }
+  .nav__icon {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 80px;
+  }
+  .top-footer {
+    display: flex;
+  }
+  
+.bottom-footer {
+  display: flex;
+  padding-left: 15px;
+}
+.component__code--black {
+  background: black;
+  padding-left: 15px;
+}
+.page-footer__header--white {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+
+}
+
+input[type=email] {
+  width: 40%;
+  background: black;
+  font-family: "GreycliffCF-Regular";
+  letter-spacing: .2rem;
+  color: grey;
+  border: none;
+  border-bottom: 2px solid grey;
+ 
+}
+
+input[type=submit] {
+  background: black;
+  font-size: 1.3rem;
+  font-family: "GreycliffCF-Regular";
+  text-transform: uppercase;
+  color: var(--yellow);
+  border: none;
+  padding: 0.8rem 3rem;
+  position: relative;
+  bottom: 10.5px;
+}
+.page-footer__header {
+    color: var(--yellow);
+}
+
+  .page-footer__nav li {
     list-style: none;
+    font-size: 3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     display: inline-block;
   }
 
@@ -169,7 +237,6 @@ h2 {
   text-align: center;
 }
 .card__container {
-  border: 1px solid red;
   max-width: 24rem;
   background: white;
   text-align: center;
@@ -234,7 +301,6 @@ h2 {
 
   .component__8bit {
     content: "CODE";
-    border: 1px solid red;
     background: #000;
     margin: 0;
     display: flex;
@@ -362,6 +428,5 @@ h2 {
 
 .vintageria-logo {
     height: 100%;
-    border: 1px solid red;
     display: inline-block; 
   }
