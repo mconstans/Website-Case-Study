@@ -19,7 +19,7 @@
     --black: #000;
     --gray-dark: #545454;
     --gray-light: #ebebeb;
-    --yellow: #ffdb00;
+    --yellow: #fdeb17;
     --yellow-light: #fffae3;
     --green-light: #e6f7e7;
     --white: #fff;
@@ -115,6 +115,49 @@ h2 {
     font-size: 1.5rem;
   }
 
+/***
+  * Atoms
+  */
+.card {
+  max-width: 24rem;
+  background: #f2f3f0;
+  color: #000;
+  text-align: center;
+  padding-top: 8px;
+}
+.card__title {
+  display: flex;
+  font-family: "GreycliffCF-Bold";
+  font-size:small;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+.price__regular {
+  padding-left: 210px;
+  flex-direction:row-reverse;
+  margin: 0;
+}
+
+.button {
+  background: #fdeb17;
+  border: 3px solid #000;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  display: inline-block;
+  font-family: "GreycliffCF-Bold";
+  text-decoration: none;
+  text-align: center;
+}
+.card__container {
+  border: 1px solid red;
+  max-width: 24rem;
+  background: white;
+  text-align: center;
+}
+.button__background {
+  margin-top: 40px;
+}
 
   /***
   * Utilities
