@@ -7,6 +7,7 @@
     <title>Components | Vintage It</title>
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="https://kit.fontawesome.com/6736823449.js" crossorigin="anonymous"></script>
 <!--/**
 * @license
 * MyFonts Webfont Build ID 867402
@@ -31,18 +32,56 @@
       <p>
         This is a collection of components based on my study of the design system of the <a href="https://www.vintageria.it/">Vintageria Website.</a>
       </p>
-
       <section>
-        <h2 class="component-page__section-heading">Typography</h2>
 
-        <article>
-          <h3 class="component__name">Header</h3>
+        <article class="component-page__header">
+          <h3 class="component__name">Page Header</h3>
           <div class="component__img">
-            <img src="img/cover_header.JPG" alt="hero header">
+            <img src="img/Match.JPG" alt="main nav bar">
           </div>
           <div class="component__code">
-            <h1 class="header__color">Vintage <br> <span class="text__white">is the new New</span></h1>
+            <nav class="main-nav">
+              <div class="nav-left">
+              <ul class="component-page__nav">
+                <li><i class="fas fa-bars"></i></li>
+                <li>SHOP</li>
+                <li><i class="fas fa-search"></i></li>
+              </ul>
+              </div>
+              <a class="link" href="#!">
+                <h1 class="vintageria-logo">
+                  <img src="img/Screen Shot 2021-04-23 at 9.16.03 PM.png"  width="160" height="50" alt="Vintageria Logo">
+                </h1>
+              </a>
+              <div class="nav-right">
+              <ul class="component-page__nav">
+                <li><i class="far fa-smile"></i></li>
+                <li>LOGIN</li>
+                <li><i class="far fa-heart"></i></li>
+                <li><i class="fas fa-shopping-cart"></i></li>
+              </ul>
+              </div>
+            </nav>
           </div>
+
+        <article>
+          <h3 class="component__name">Hero section</h3>
+          <div class="component__img">
+            <img src="img/Screen Shot 2021-04-24 at 8.22.42 PM.png" width="600" alt="hero">
+          </div>
+          <div class="component__code--orange">
+            <div class="hero__text">
+            <h1 class="header__color">Vintage <br> <span class="text__white">is the new <br> New</span></h1>
+            <h3 class="header3__font">We have the coolest <br>
+              store in <b>Venice</b>, come visit!</h3>
+            </div>
+            <div class="hero__image">
+            <img src="img/Screen Shot 2021-04-24 at 8.45.13 PM.png" width="300" alt="hero image">
+            </div>
+          </div>
+          <p>
+            <a href="#!" class="button--primary">OUR SHOP IN VENICE</a>
+          </p>
         </article>
 
         <article>
@@ -53,47 +92,203 @@
           <div class="component__code">
             <h2 class="header2__font">Highlights</h2>
           </div>
-          <div class="component__img">
-            <img src="img/cover_h2 header.JPG" alt="header">
-          </div>
-          <div class="component__code--orange">
-            <h3 class="header3__font">We have the coolest store in Venice, come visit!</h3>
-          </div>
         </article>
+
+      <section>
+        <h3 class="component__name">Featured Products</h3>
+        <div class="component__img">
+          <img src="img/featured-product__card.PNG" alt="featured product card">
+          <img src="img/featured-product2__card.PNG" alt="featured product number 2">
+        </div>
+        <div class="component__code">
+          <div class="card__container">
+          <article class="card">
+          <img src="img/Screen Shot 2021-04-24 at 5.00.03 PM.png" width="365" height="365" alt="product image">
+          <h3 class="card__title">Carhartt Tank Top <div class="price__regular">25.00&euro;</div></h3>
+          </article>
+
+          <div class="button__background">
+          <p>
+            <a href="#!" class="button">ALL PRODUCTS</a>
+          </p>
+          </div>  
+          <div class="card__container">
+          <article class="card">
+          <img src="img/Screen Shot 2021-04-24 at 9.59.24 PM.png" width="365" height="365" alt="product image">
+          <h3 class="card__title">Ripzone Aloha Shirt <div class="price__regular">25.00&euro;</div></h3>
+          </article>
+
+          <div class="button__background">
+          <p>
+            <a href="#!" class="button">NEW ARRIVALS</a>
+          </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      
       </section>
+      
+      <article>
+        <h3 class="component__name">h2, h3, h4</h3>
+        <div class="component__img">
+          <img src="img/product_section_header.JPG" alt="header">
+        </div>
+        <div class="component__code">
+          <h2 class="header2__font">Cool sh*t <br> for cool people</h2>
+        </div>
+      </article>
+
+      <article>
+        <h3 class="component__name">Product Categories</h3>
+        <div class="component__img">
+          <img src="img/product_section_cards.JPG" alt="products available">
+        </div>
+
+        <div class="component__8bit">
+         <div class="product__section">
+         <img src="img/Screen Shot 2021-04-24 at 11.57.16 PM.png" width="200" height="200" alt="image1">
+         <p class="product__text">Denim Jackets</p>
+         </div>
+         <div class="product__section">
+         <img src="img/Screen Shot 2021-04-24 at 11.57.30 PM.png" width="200" height="200" alt="image2">
+         <p class="product__text">Hoodies, Sweatshirts & <br> Track Jackets</p>
+         </div>
+         <div class="product__section">
+         <img src="img/Screen Shot 2021-04-24 at 11.57.41 PM.png" width="200" height="200" alt="image3">
+         <p class="product__text">Adidas</p>
+         </div>
+         <div class="product__section">
+         <img src="img/Screen Shot 2021-04-24 at 11.57.53 PM.png" width="200" height="200" alt="image4">
+         <p class="product__text">Levi's</p>
+         </div>
+        </div>
+      </article>
+
       <section>
         <h2 class="component-page__section-heading">Feature article</h2>
 
         <article>
           <h3 class="component__name">article</h3>
           <div class="component__img">
-            <img src="img/feature_article.png" alt="feature">
+            <img src="img/featured_article.JPG" alt="feature">
           </div>
-          <div class="component__article">
+
+          <div class="component__8bit">
+            <div class="bit__container">
             <h1 class="feature__header">8bitVintageAnimals</h1>
             <h2 class="feature__header2">USE OUR INSTAGRAM FILTER <br>
               AND GET 10 OFF!</h2>
             <p class="text">First of all, follow us on Instragram. Then apply our filter to one of your stories or pictures and mention our
-              profile @vintageria.it in it. We will reward you with a 10 discount coupon!</p>
-            </p>
+              profile @vintageria.it in it. We will reward you with a 10&euro; discount coupon!</p>
+            </div>
+            <img src="img/Screen Shot 2021-04-24 at 10.14.38 PM.png" width="300" height="300" alt="8bit style image">
           </div>
         </article>
+      </section>
+
+        
 
         <div class="container">
+          <img src="img/Screen Shot 2021-04-21 at 7.58.06 PM.png" alt="header image">
+          <h2 class="header2__font">Roarrrrr</h2>
           <section class="social-media__photos">
-           <img src="images/Capture2.JPG" alt="header image">
-           <h2 class="title">Roarrrrr</h2>
-              <img height="151" width="151" src="images/147449364_440486860739927_5407069039745404928_n.jpg" alt="image1">
-              <img height="151" width="151" src="images/147670144_693321644683382_8004888029615264565_n.jpg" alt="image2">
-              <img height="151" width="151" src="images/147914323_2956168111283374_7594843269875481316_n.jpg" alt="image3">
-              <img height="151" width="151" src="images/143660355_740367279933993_2713822996420235148_n.jpg" alt="image7">
-              <img height="151" width="151" src="images/143362014_234254388189134_5960782529840396760_n.jpg" alt="image5">   
-              <img height="151" width="151" src="images/143396703_3017117984991317_703411232442001741_n.jpg" alt="image4">
-              <img height="151" width="151" src="images/140065941_808632943200469_2581024584705256678_n.jpg" alt="image6">
-              <img height="151" width="151" src="images/140381699_1083011488833913_1375064201655669686_n.jpg" alt="image8">
+              <img height="210" width="210" src="img/147449364_440486860739927_5407069039745404928_n.jpg" alt="image1">
+              <img height="210" width="210" src="img/147670144_693321644683382_8004888029615264565_n.jpg" alt="image2">
+              <img height="210" width="210" src="img/147914323_2956168111283374_7594843269875481316_n.jpg" alt="image3">
+              <img height="210" width="210" src="img/143396703_3017117984991317_703411232442001741_n.jpg" alt="image4">
+              <img height="210" width="210" src="img/143660355_740367279933993_2713822996420235148_n.jpg" alt="image7">
+              <img height="210" width="210" src="img/143362014_234254388189134_5960782529840396760_n.jpg" alt="image5">   
+              <img height="210" width="210" src="img/140065941_808632943200469_2581024584705256678_n.jpg" alt="image6">
+              <img height="210" width="210" src="img/140381699_1083011488833913_1375064201655669686_n.jpg" alt="image8">
            </section>
+           <h3 class="title">@vintageria.it</h3>
+           <h3 class="title"><i class="fab fa-instagram"></i></h3>
            </div>
-          </body>
 
-</body>
+           <article class="component-page__footer">
+            <div class="component__img">
+              <img src="img/Screen Shot 2021-04-25 at 12.18.15 PM.png" alt="contact form image">
+            </div>
+
+            <div class="component__code--black">
+             <div class="form">
+                <img src="img/Screen Shot 2021-04-25 at 2.06.15 PM.png" width="65" alt="email icon">
+              </div>
+                  <h3 class="page-footer__header--white">FIRST TIME SUBSCRIBERS GET 10&euro; OFF</h3>
+                      <form action="my-form.php" method="POST">
+                      <input type="email" name="email" value="email address">
+                      <input type="submit" value="submit">
+                      </form>
+              <h3 class="component__name">footer__nav</h3>
+              <div class="component__img">
+                <img src="img/Screen Shot 2021-04-23 at 11.12.17 PM.png" alt="products available">
+              </div>
+             </div>
+    
+            <div class="footer__nav">
+            <section class="top-footer">
+            <div class="nav__icon">
+                <img src="img/Screen Shot 2021-04-23 at 10.51.56 PM.png" width="65" height="65" alt="image4">
+                <p class="footer__text">CONTACT US</p>
+                </div>
+             <div class="nav__icon">
+             <img src="img/Screen Shot 2021-04-23 at 10.53.19 PM.png" width="65" height="65" alt="image1">
+             <p class="footer__text">FREE DELIVERY</p>
+             </div>
+             <div class="nav__icon">
+             <img src="img/Screen Shot 2021-04-23 at 10.53.36 PM.png" width="65" height="65" alt="image2">
+             <p class="footer__text">DELIVERY POLICY</p>
+             </div>
+             <div class="nav__icon">
+             <img src="img/Screen Shot 2021-04-23 at 10.54.16 PM.png" width="65" height="65" alt="image3">
+             <p class="footer__text">RETURNS POLICY</p>
+             </div>
+             </section>
+             <section class="bottom-footer">
+             <div class="nav__icon">
+             <img src="img/Screen Shot 2021-04-23 at 10.54.36 PM.png" wwidth="65" height="65" alt="image4">
+             <p class="footer__text">INFO</p>
+             </div>
+             <div class="nav__icon">
+              <img src="img/Screen Shot 2021-04-23 at 10.55.04 PM.png" width="65" height="65" alt="image4">
+              <p class="footer__text">SIZE GUIDE</p>
+              </div>
+            <div class="nav__icon">
+              <img src="img/Screen Shot 2021-04-23 at 10.55.22 PM.png" width="65" height="65" alt="image4">
+              <p class="footer__text">PAYMENT SECURITY</p>
+            </div>
+            <div class="nav__icon">
+              <img src="img/Screen Shot 2021-04-23 at 10.55.35 PM.png" width="65" height="65" alt="image4">
+              <p class="footer__text">COOKIES & PRIVACY</p>
+            </div>
+            </section>
+            </div>
+
+            <h3 class="component__name">Page Footer</h3>
+            <div class="component__img">
+              <img src="img/Screen Shot 2021-04-25 at 12.32.07 AM.png" alt="social media icons">
+            </div>
+            <div class="component__code">
+              <nav class="page__footer">
+                <div>
+                <h3 class="page-footer__header">FOLLOW US</h3>
+                <ul class="page-footer__nav">
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-twitter"></i></li>
+                  <li><i class="fab fa-pinterest-p"></i></li>
+                  <li><i class="fab fa-youtube"></i></li>
+                  <li><i class="fab fa-spotify"></i></li>
+                </ul>
+                <p>2020-2021 Vintageria Venezia</p>
+                <p>Via Colombo 16, 30035 Mirano (VE), Italy</p>
+                <p>IT04579320278</p>
+                <p>Made with the Power of love by HCE</p>
+                <p>Manage cookies</p>  
+               </div>
+              </nav>
+            </div>
+          </article>
+  </body>
 </html>

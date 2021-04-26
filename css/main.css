@@ -19,7 +19,7 @@
     --black: #000;
     --gray-dark: #545454;
     --gray-light: #ebebeb;
-    --yellow: #ffdb00;
+    --yellow: #fdeb17;
     --yellow-light: #fffae3;
     --green-light: #e6f7e7;
     --white: #fff;
@@ -43,8 +43,12 @@
     line-height: 1.0;
   }
   
-  .GreycliffCFBold {
-    font-family: "GreycliffCF-Bold";
+.GreycliffCFBold {
+  font-family: "GreycliffCF-Bold";
+}
+
+.GreycliffCFRegular {
+	font-family: "GreycliffCF-Regular";
 }
 
 h2 {
@@ -72,11 +76,178 @@ h2 {
     display: block;
   }
   
+  .main-nav {
+    background: white;
+    border: 1px solid purple;
+    padding-bottom: 40px;
+  }
+  
+.component-page__header {
+}
+  .component-page__nav ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  
+  .page__footer {
+    text-align: center;
+    font-size: 1.5rem;
+    background: black;
+    color: white;
+    padding:  10px;
+    line-height: 0.8;
+  }
+  .footer__nav {
+    background: black;
+  }
+  .nav__icon {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 80px;
+  }
+  .top-footer {
+    display: flex;
+  }
+  
+.bottom-footer {
+  display: flex;
+  padding-left: 15px;
+}
+.component__code--black {
+  background: black;
+  padding-left: 15px;
+}
+.page-footer__header--white {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+
+}
+
+input[type=email] {
+  width: 40%;
+  background: black;
+  font-family: "GreycliffCF-Regular";
+  letter-spacing: .2rem;
+  color: grey;
+  border: none;
+  border-bottom: 2px solid grey;
+ 
+}
+
+input[type=submit] {
+  background: black;
+  font-size: 1.3rem;
+  font-family: "GreycliffCF-Regular";
+  text-transform: uppercase;
+  color: var(--yellow);
+  border: none;
+  padding: 0.8rem 3rem;
+  position: relative;
+  bottom: 10.5px;
+}
+.page-footer__header {
+    color: var(--yellow);
+}
+
+  .page-footer__nav li {
+    list-style: none;
+    font-size: 3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+  }
+
+  .main-nav i {
+    width: 60px;
+    text-align: center;
+  }
+
+  .main-nav ul li {
+    display: block;
+  }
+
+  .nav-left ul li {
+    float: left;
+  }
+
+  .nav-right ul li {
+    float: right;
+  }
+
+  .fas {
+    font-size: 1.5rem;
+  }
+
+  .far {
+    font-size: 1.5rem;
+  }
+
+
+
+/***
+  * Atoms
+  */
+.card {
+  max-width: 24rem;
+  background: #f2f3f0;
+  color: #000;
+  text-align: center;
+  padding-top: 8px;
+}
+.card__title {
+  display: flex;
+  font-family: "GreycliffCF-Bold";
+  font-size:small;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+.price__regular {
+  padding-left: 210px;
+  flex-direction:row-reverse;
+  margin: 0;
+}
+
+.button {
+  background: #fdeb17;
+  border: 3px solid #000;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  display: inline-block;
+  font-family: "GreycliffCF-Bold";
+  text-decoration: none;
+  text-align: center;
+}
+
+.button--primary {
+  background: #fdeb17;
+  border: 3px solid #000;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  display: inline-block;
+  font-family: "GreycliffCF-Bold";
+  text-decoration: none;
+  text-align: center;
+}
+.card__container {
+  max-width: 24rem;
+  background: white;
+  text-align: center;
+}
+.button__background {
+  margin-top: 40px;
+}
+
   /***
   * Utilities
   */
-  
-
   
   .container {
     padding: 2rem;
@@ -111,18 +282,52 @@ h2 {
   .component__code {
     border: 1px solid #ccc;
     margin: 0;
-    position: relative;
   }
 
   .component__code--orange {
     border: 1px solid #ccc;
     background: #FD5E08;
     margin: 0;
-    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  .hero__text {
+    padding-left: 20px;
+    padding-right: 65px;
+  }
+  .hero__image {
+    padding-top: 15px;
   }
 
+  .component__8bit {
+    content: "CODE";
+    background: #000;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+  }
+  .bit__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .bit__image {
+    
+  }
+
+  .product__section {
+    display: block;
+    font-family: "GreycliffCF-Regular";
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
+  .product__text {
+    padding-top: 0;
+  }
   .header__color {
-    font-size: 6rem;
+    font-size: 3.4rem;
     background: #FD5E08;
     color: #6700b6;
   }
@@ -134,11 +339,12 @@ h2 {
   }
 
   .text__white {
+    font-size: 3.4rem;
     color: white;
   }
   .header3__font {
-    font-family: "GreycliffCF-Bold";
-    background: #FD5E08;
+    font-family: "GreycliffCF-Regular";
+    font-size: 1.2rem;
     color: #6700b6;
   }
 
@@ -157,13 +363,6 @@ h2 {
     text-align: center;
 
   }
-
-  .component__article {
-    content: "CODE";
-    display: block;
-    padding: 0.25rem;
-    background: #000;
-  }
   
   .text {
     font-family: "GreycliffCF-Bold";
@@ -172,6 +371,7 @@ h2 {
     line-height: 1.5em;
     text-align: center;
   }
+
   .component__code:before,
   .component__img:before {
     content: "CODE";
@@ -200,20 +400,9 @@ h2 {
     display: block;
     padding-top: 5rem;
   }
-  .component-page__header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: var(--gray-light);
-    z-index: 100;
-  }
-  .component-page__header-container {
-    position: static;
-    padding: 1rem 2rem;
-  }
-  .component-page__nav {
-    display: none;
-  }
+
+
+ 
   .component-page__section-heading {
     margin-bottom: 0;
     font-size: 1em;
@@ -223,4 +412,21 @@ h2 {
     padding: 0.5rem;
     top: 4.5rem;
     z-index: 10;
+  }
+
+  .social-media__photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0;
+  }
+
+  .title {
+    font-family: "GreycliffCF-Regular";
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+.vintageria-logo {
+    height: 100%;
+    display: inline-block; 
   }
