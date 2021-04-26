@@ -6,6 +6,11 @@
   src: url('webFonts/GreycliffCFBold/font.woff2') format('woff2'), url('webFonts/GreycliffCFBold/font.woff') format('woff');
 }
 
+@font-face {
+  font-family: "GreycliffCF-Regular";
+  src: url('webFonts/GreycliffCFRegular/font.woff2') format('woff2'), url('webFonts/GreycliffCFRegular/font.woff') format('woff');
+}
+
 
 :root {
     --black: #000;
@@ -78,14 +83,14 @@ h6 {
 .header2__font {
   font-family: "Aromatron-Regular";
   font-size: 3.8rem;
-  font-weight: 50;
+  font-weight:500;
 }
 
 .header2__font--opposite {
   font-family: "Aromatron-Regular";
   font-size: 3.8rem;
   color: var(--yellow);
-  font-weight: 50;
+  font-weight: 500;
 }
 
 .text__white {
@@ -121,10 +126,6 @@ h6 {
   text-align: center;
 }
 
-img, {
-  max-width: 100%;
-  display: block;
-}
 
 
 .main-nav {
