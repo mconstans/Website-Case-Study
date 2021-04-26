@@ -1,18 +1,10 @@
-@font-face {
-    font-family: 'Aromatron';
-    src: url('Aromatron-Regular.woff2') format('woff2'),
-        url('Aromatron-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @import url("//hello.myfonts.net/count/3da89f");
   
 @font-face {
   font-family: "GreycliffCF-Bold";
   src: url('webFonts/GreycliffCFBold/font.woff2') format('woff2'), url('webFonts/GreycliffCFBold/font.woff') format('woff');
 }
-
 
 
 :root {
@@ -25,24 +17,28 @@
     --white: #fff;
     --font-sans-serif: Poppins, sans-serif;
     --font-serif: Brawler, serif;
-  }
+}
   
-  html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
   
-  body {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    color: var(--gray-dark);
-    line-height: 1.0;
-  }
-  
+body {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--gray-dark);
+  line-height: 1.0;
+}
+ 
+
+.AromatronRegular {
+  font-family: "Aromatron-Regular";
+}  
 .GreycliffCFBold {
   font-family: "GreycliffCF-Bold";
 }
@@ -50,68 +46,120 @@
 .GreycliffCFRegular {
 	font-family: "GreycliffCF-Regular";
 }
+/***
+  *Headers & various stylings
+  */
+h1 {
+      font-family: "Aromatron-Regular";
+      font-weight: 200;
+}
 
 h2 {
     font-family: "GreycliffCF-Bold";
     color: var(--black);
 }
-  h1 {
-      font-family: Aromatron-Regular;
-      font-weight: 200;
-  }
 
-
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-sans-serif);
-    font-weight: 400;
-    color: var(--black);
-    line-height: 1.1;
-  }
-  
-  img, {
-    max-width: 100%;
-    display: block;
-  }
-  
-  .main-nav {
-    background: white;
-    border: 1px solid purple;
-    padding-bottom: 40px;
-  }
-  
-.component-page__header {
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.1;
 }
-  .component-page__nav ul {
-    list-style: none;
-    margin: 0;
-    overflow: hidden;
-  }
-
   
-  .page__footer {
-    text-align: center;
-    font-size: 1.5rem;
-    background: black;
-    color: white;
-    padding:  10px;
-    line-height: 0.8;
-  }
-  .footer__nav {
-    background: black;
-  }
-  .nav__icon {
-    color: white;
-    font-size: 0.8rem;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 80px;
-  }
-  .top-footer {
-    display: flex;
-  }
+.header__color {
+  font-size: 3.4rem;
+  background: #FD5E08;
+  color: #6700b6;
+}
+
+.header2__font {
+  font-family: "Aromatron-Regular";
+  font-size: 3.8rem;
+  font-weight: 50;
+}
+
+.header2__font--opposite {
+  font-family: "Aromatron-Regular";
+  font-size: 3.8rem;
+  color: var(--yellow);
+  font-weight: 50;
+}
+
+.text__white {
+  font-size: 3.4rem;
+  color: white;
+}
+.header3__font {
+  font-family: "GreycliffCF-Regular";
+  font-size: 1.2rem;
+  color: #6700b6;
+}
+
+.feature__header {
+  font-family: "GreycliffCF-Bold";
+  font-size: 3rem;
+  color: #FDEB17;
+  background: #000;
+  text-align: center;
+}
+
+.feature__header2 {
+  font-family: "GreycliffCF-Bold";
+  color: white;
+  background: #000;
+  text-align: center;
+}
+
+.text {
+  font-family: "GreycliffCF-Bold";
+  color: white;
+  font-size: 1.0rem;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+img, {
+  max-width: 100%;
+  display: block;
+}
+
+
+.main-nav {
+  background: white;
+  padding-bottom: 40px;
+  display: flex;
+}
+  
+.component-page__nav ul {
+   list-style: none;
+   margin: 0;
+  overflow: hidden;
+}
+
+.page__footer {
+  text-align: center;
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  padding:  10px;
+  line-height: 0.8;
+}
+.footer__nav {
+  background: black;
+}
+.nav__icon {
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 80px;
+}
+.top-footer {
+  display: flex;
+}
   
 .bottom-footer {
   display: flex;
@@ -120,12 +168,13 @@ h2 {
 .component__code--black {
   background: black;
   padding-left: 15px;
+  border: 1px solid #ccc;
+  margin: 0;
 }
 .page-footer__header--white {
     color: white;
     font-size: 1.5rem;
     letter-spacing: .2rem;
-
 }
 
 input[type=email] {
@@ -136,7 +185,6 @@ input[type=email] {
   color: grey;
   border: none;
   border-bottom: 2px solid grey;
- 
 }
 
 input[type=submit] {
@@ -154,41 +202,39 @@ input[type=submit] {
     color: var(--yellow);
 }
 
-  .page-footer__nav li {
-    list-style: none;
-    font-size: 3rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    display: inline-block;
-  }
+.page-footer__nav li {
+  list-style: none;
+  font-size: 3rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  display: inline-block;
+}
 
-  .main-nav i {
-    width: 60px;
-    text-align: center;
-  }
+.main-nav i {
+  width: 60px;
+  text-align: center;
+}
 
-  .main-nav ul li {
-    display: block;
-  }
+.main-nav ul li {
+  display: block;
+}
 
-  .nav-left ul li {
-    float: left;
-  }
+.nav-left ul li {
+  float: left;
+}
 
-  .nav-right ul li {
-    float: right;
-  }
+.nav-right ul li {
+  float: right;
+}
 
-  .fas {
-    font-size: 1.5rem;
-  }
+.fas {
+  font-size: 1.5rem;
+}
 
-  .far {
-    font-size: 1.5rem;
-  }
-
-
+.far {
+  font-size: 1.5rem;
+}
 
 /***
   * Atoms
@@ -236,6 +282,19 @@ input[type=submit] {
   text-decoration: none;
   text-align: center;
 }
+
+.button--yellow {
+  background: black;
+  border: 3px solid #fdeb17;
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: #fdeb17;
+  display: inline-block;
+  font-family: "GreycliffCF-Bold";
+  font-size:0.7rem;
+  text-decoration: none;
+  text-align: center;
+}
 .card__container {
   max-width: 24rem;
   background: white;
@@ -249,184 +308,124 @@ input[type=submit] {
   * Utilities
   */
   
-  .container {
-    padding: 2rem;
-  }
+.container {
+  padding: 2rem;
+}
   
   /**
-  * design system component on the components.html page
+  * Components
   **/
-  .component {
-    margin-bottom: 6rem;
-    position: relative;
-  }
+.component {
+  margin-bottom: 6rem;
+  position: relative;
+}
   
-  .component img {
-    max-width: initial;
-  }
-  .component__img {
-    border: 1px solid #ccc;
-    margin: 0;
-    overflow-x: auto;
-    position: relative;
-  }
+.component img {
+  max-width: initial;
+}
+
+.component__img {
+
+  margin: 0;
+  overflow-x: auto;
+  position: relative;
+}
   
-  .component__name {
-    font-family: monospace;
-    font-size: 1.25rem;
-    font-weight: normal;
-    background: var(--gray-light);
-    padding: 0.25rem;
-    margin: 0;
-  }
-  .component__code {
-    border: 1px solid #ccc;
-    margin: 0;
+.component__name {
+  font-family: monospace;
+  font-size: 1.25rem;
+  font-weight: normal;
+  background: var(--gray-light);
+  padding: 0.25rem;
+  margin: 0;
+}
+.component__code {
+  border: 1px solid #ccc;
+  margin: 0;
+}
+
+.component__code--orange {
+  border: 1px solid #ccc;
+  background: #FD5E08;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+.hero__text {
+  padding-left: 20px;
+  padding-right: 65px;
+}
+.hero__image {
+  padding-top: 15px;
+}
+
+.component__8bit {
+  content: "CODE";
+  background: #000;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
   }
 
-  .component__code--orange {
-    border: 1px solid #ccc;
-    background: #FD5E08;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
-  }
-  .hero__text {
-    padding-left: 20px;
-    padding-right: 65px;
-  }
-  .hero__image {
-    padding-top: 15px;
-  }
+.bit__container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
-  .component__8bit {
-    content: "CODE";
-    background: #000;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
-  }
-  .bit__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .bit__image {
-    
-  }
+.product__section {
+  display: block;
+  font-family: "GreycliffCF-Regular";
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+}
 
-  .product__section {
-    display: block;
-    font-family: "GreycliffCF-Regular";
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
-  }
+.product__text {
+  padding-top: 0;
+}
 
-  .product__text {
-    padding-top: 0;
-  }
-  .header__color {
-    font-size: 3.4rem;
-    background: #FD5E08;
-    color: #6700b6;
-  }
-
-  .header2__font {
-    font-family: "aromatron";
-    font-size: 3.8rem;
-    font-weight: 50;
-  }
-
-  .text__white {
-    font-size: 3.4rem;
-    color: white;
-  }
-  .header3__font {
-    font-family: "GreycliffCF-Regular";
-    font-size: 1.2rem;
-    color: #6700b6;
-  }
-
-  .feature__header {
-    font-family: "GreycliffCF-Bold";
-    font-size: 3rem;
-    color: #FDEB17;
-    background: #000;
-    text-align: center;
-  }
-
-  .feature__header2 {
-    font-family: "GreycliffCF-Bold";
-    color: white;
-    background: #000;
-    text-align: center;
-
-  }
+.component__code:before,
+.component__img:before {
+  content: "CODE";
+  display: block;
+  padding: 0.25rem;
+  line-height: 1;
+  font-family: monospace;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: var(--gray-light);
+  color: var(--gray-dark);
+}
+.component__img:before {
+  content: "IMG";
+}
   
-  .text {
-    font-family: "GreycliffCF-Bold";
-    color: white;
-    font-size: 1.0rem;
-    line-height: 1.5em;
-    text-align: center;
-  }
+.component-page {
+  display: block;
+  padding-top: 5rem;
+}
+.component-page__section-heading {
+  margin-bottom: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: var(--black);
+  color: var(--white);
+  padding: 0.5rem;
+  top: 4.5rem;
+  z-index: 10;
+}
 
-  .component__code:before,
-  .component__img:before {
-    content: "CODE";
-    display: block;
-    padding: 0.25rem;
-    line-height: 1;
-    font-family: monospace;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    background: var(--gray-light);
-    color: var(--gray-dark);
-  }
-  .component__img:before {
-    content: "IMG";
-  }
+.social-media__photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
+}
 
-
-
-  /*********************************
-  * TEMPLATES
-  **/
-  
-  .component-page {
-    display: block;
-    padding-top: 5rem;
-  }
-
-
- 
-  .component-page__section-heading {
-    margin-bottom: 0;
-    font-size: 1em;
-    text-transform: uppercase;
-    background: var(--black);
-    color: var(--white);
-    padding: 0.5rem;
-    top: 4.5rem;
-    z-index: 10;
-  }
-
-  .social-media__photos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0;
-  }
-
-  .title {
-    font-family: "GreycliffCF-Regular";
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-.vintageria-logo {
-    height: 100%;
-    display: inline-block; 
-  }
+.title {
+  font-family: "GreycliffCF-Regular";
+  font-size: 1.5rem;
+  text-align: center;
+}
