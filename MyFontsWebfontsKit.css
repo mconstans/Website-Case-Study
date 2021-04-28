@@ -26,3 +26,9 @@
   src: url('webFonts/GreycliffCFBold/font.woff2') format('woff2'), url('webFonts/GreycliffCFBold/font.woff') format('woff');
 }
 
+@import url("//hello.myfonts.net/count/3dfa4e");
+  
+@font-face {
+  font-family: "Aromatron-Regular";
+  src: url('webFonts/AromatronRegular/font.woff2') format('woff2'), url('webFonts/AromatronRegular/font.woff') format('woff');
+}
