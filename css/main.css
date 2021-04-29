@@ -64,15 +64,6 @@ h2 {
     color: var(--black);
 }
 
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-sans-serif);
-  font-weight: 400;
-  color: var(--black);
-  line-height: 1.1;
-}
   
 .header__color {
   font-size: 3.4rem;
@@ -124,20 +115,6 @@ h6 {
   font-size: 1.0rem;
   line-height: 1.5em;
   text-align: center;
-}
-
-
-
-.main-nav {
-  background: white;
-  padding-bottom: 40px;
-  display: flex;
-}
-  
-.component-page__nav ul {
-   list-style: none;
-   margin: 0;
-  overflow: hidden;
 }
 
 .page__footer {
@@ -212,8 +189,12 @@ input[type=submit] {
   display: inline-block;
 }
 
+.main-nav {
+  background: white;
+  padding-bottom: 40px;
+  display: flex;
+}
 .main-nav i {
-  width: 60px;
   text-align: center;
 }
 
@@ -227,6 +208,12 @@ input[type=submit] {
 
 .nav-right ul li {
   float: right;
+}
+
+.component-page__nav ul {
+  list-style: none;
+  margin: 0;
+ overflow: hidden;
 }
 
 .fas {
@@ -429,4 +416,31 @@ input[type=submit] {
   font-family: "GreycliffCF-Regular";
   font-size: 1.5rem;
   text-align: center;
+}
+
+/**
+  * Homepage Styles
+  **/
+
+.homepage__header {
+  
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-nav--homepage {
+ display: flex;
+ justify-content: space-between;
+}
+
+.nav-left--homepage {
+
+}
+
+.nav-right--homepage {
+
 }
