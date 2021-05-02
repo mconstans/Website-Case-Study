@@ -342,28 +342,12 @@ input[type=submit] {
   padding-top: 15px;
 }
 
-.component__8bit {
-  content: "CODE";
-  background: #000;
-  margin: 0;
-  display: flex;
-  overflow: hidden;
-  padding: 40px;
-  }
 
 .bit__container {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.product__section {
-  display: block;
-  font-family: "GreycliffCF-Regular";
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 10px;
-}
 
 .product__text {
   padding-top: 0;
@@ -419,6 +403,8 @@ input[type=submit] {
   **/
 
   /**Nav styles **/
+
+
   .header-inner {
     display: flex;
     flex-direction: row;
@@ -429,6 +415,23 @@ input[type=submit] {
     box-sizing: border-box;
   }
   
+  .component__8bit {
+    content: "CODE";
+    background: #000;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .product__section {
+    display: block;
+    font-family: "GreycliffCF-Regular";
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
   .header-inner__left {
     display: flex;
     align-items: center;
@@ -451,6 +454,7 @@ input[type=submit] {
   }
 
   /** Hero styling**/
+
   .hero__background {
     background: #FD5E08;
     display: flex;
@@ -511,6 +515,11 @@ input[type=submit] {
 .block {
   display: flex;
   padding-left: 10px;
+}
+
+.player[data-v-080366d3] {
+  width: 100%;
+  display: block;
 }
 
 
