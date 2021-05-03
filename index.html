@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
 </head>
     <body>
-      <div class="sw-top-navigation">
+      
         <div class="header-inner">
             <div class="header-inner__left">
              <nav>
@@ -51,7 +51,7 @@
                   </ul>
             </div>
         </div>
-      </div>
+  
     
 
       <div class="hero__background">
@@ -68,18 +68,20 @@
             <img class="hero__image" src="components/img/image23.png" alt="hero image">
           </div>
         <div class="button-container">  
-          <p>
-            <a href="#!" class="button--primary">OUR SHOP IN VENICE</a>
-          </p>
+            <p>
+              <a href="#!" class="button--primary">OUR SHOP IN VENICE</a>
+            </p>
         </div>
       </div>
+
     <h2 class="header2__font">Highlights</h2>
     
-    <div class="highlights">  
-      <div class="card--left">
+    <div class="highlights">
+      <div class="hightlights__container">  
+      <div class="card--card">
         <article class="card">
         <img class="item__image--mod" src="components/img/image24.png" alt="product image">
-        <h3 class="card__title">Carhartt Tank Top <div class="price__regular">25.00&euro;</div></h3>
+        <h3 class="card__title">Carhartt Tank Top <span class="price__regular">25.00&euro;</span></h3>
         </article>
 
         <div class="button__background">
@@ -88,10 +90,11 @@
         </p>
         </div>
       </div>
-      <div class="card--right">
+
+      <div class="card--card">
         <article class="card">
           <img class="item__image--mod" src="components/img/image25.png" alt="product image">
-          <h3 class="card__title">Ripzone Aloha Shirt <div class="price__regular">25.00&euro;</div></h3>
+          <h3 class="card__title">Ripzone Aloha Shirt <span class="price__regular">25.00&euro;</span></h3>
           </article>
 
           <div class="button__background">
@@ -99,6 +102,7 @@
             <a href="#!" class="button">NEW ARRIVALS</a>
           </p>
           </div>
+      </div>
       </div>
     </div>
         
@@ -151,7 +155,7 @@
         <div class="video">
           <video data-v-080366d3="" src="https://api.vintageria.it/media/af/71/e8/1601893027/The-Skater-420x525.mp4" 
           poster="https://api.vintageria.it/media/6a/bd/7e/1601885670/vhs-stop.jpg" muted="muted" loop="loop" 
-          playsinline="" class="player"></video>
+          playsinline="" class="player" autoplay></video>
         </div>
 
         <div class="bit__container">
@@ -173,87 +177,85 @@
               <img class="bit__image" src="components/img/8bit.PNG" alt="8bit style image">
            </div>
         </div>
-         
-
-            <h2 class="header2__font">Roarrrrr</h2>
-            <section class="social-media__photos">
-                <img height="210" width="210" src="components/img/image1.jpg" alt="image1">
-                <img height="210" width="210" src="components/img/image2.jpg" alt="image2">
-                <img height="210" width="210" src="components/img/image3.jpg" alt="image3">
-                <img height="210" width="210" src="components/img/image4.jpg" alt="image4">
-                <img height="210" width="210" src="components/img/image5.jpg" alt="image5">
-                <img height="210" width="210" src="components/img/image6.jpg" alt="image6"> 
-                <img height="210" width="210" src="components/img/image7.jpg" alt="image7">
-                <img height="210" width="210" src="components/img/image8.jpg" alt="image8">
-             </section>
-             <h3 class="title">@vintageria.it</h3>
-             <h3 class="title"><i class="fab fa-instagram"></i></h3>
+        
+        <h2 class="header2__font">Roarrrrr</h2>
+          <section class="social-media__photos">
+            <img class="social__image" src="components/img/image1.jpg" alt="image1">
+            <img class="social__image" src="components/img/image2.jpg" alt="image2">
+            <img class="social__image" src="components/img/image3.jpg" alt="image3">
+            <img class="social__image" src="components/img/image4.jpg" alt="image4">
+            <img class="social__image" src="components/img/image5.jpg" alt="image5">
+            <img class="social__image" src="components/img/image6.jpg" alt="image6"> 
+            <img class="social__image" src="components/img/image7.jpg" alt="image7">
+            <img class="social__image" src="components/img/image8.jpg" alt="image8">
+          </section>
+        <h3 class="title">@vintageria.it</h3>
+        <h3 class="title"><i class="fab fa-instagram"></i></h3>
   
-             <div class="component__code--black">
-                <div class="form">
-                   <img src="components/img/image9.png" width="65" alt="email icon">
-                   <h3 class="page-footer__header--white">FIRST TIME SUBSCRIBERS GET 10&euro; OFF</h3>
-                     <form action="my-form.php" method="POST">
-                     <input type="email" name="email" value="email address">
-                     <input type="submit" value="submit">
-                     </form>
-                 </div> 
+        <footer class="footer">
+          <div class="form">
+            <img src="components/img/image9.png" width="65" alt="email icon">
+              <h3 class="page-footer__header--white">FIRST TIME SUBSCRIBERS GET 10&euro; OFF</h3>
+                <form action="my-form.php" method="POST">
+                  <input type="email" name="email" value="email address">
+                  <input type="submit" value="submit">
+                </form>
+          </div>
+ 
+          <section class="top-footer">
+            <div class="nav__icon">
+              <img src="components/img/image12.png" width="65" height="65" alt="image4">
+              <p class="footer__text">CONTACT US</p>
+            </div>
+            <div class="nav__icon">
+              <img src="components/img/image13.png" width="65" height="65" alt="image1">
+              <p class="footer__text">FREE DELIVERY</p>
+            </div>
+            <div class="nav__icon">
+              <img src="components/img/image14.png" width="65" height="65" alt="image2">
+              <p class="footer__text">DELIVERY POLICY</p>
+            </div>
+            <div class="nav__icon">
+              <img src="components/img/image15.png" width="65" height="65" alt="image3">
+              <p class="footer__text">RETURNS POLICY</p>
+            </div>
+          </section>
+ 
+          <section class="bottom-footer">
+            <div class="nav__icon">
+              <img src="components/img/image16.png" width="65" height="65" alt="image4">
+              <p class="footer__text">INFO</p>
+            </div>
+            <div class="nav__icon">
+              <img src="components/img/image17.png" width="65" height="65" alt="image4">
+              <p class="footer__text">SIZE GUIDE</p>
+            </div>
+            <div class="nav__icon">
+              <img src="components/img/image18.png" width="65" height="65" alt="image4">
+              <p class="footer__text">PAYMENT SECURITY</p>
+            </div>
+            <div class="nav__icon">
+              <img src="components/img/image19.png" width="65" height="65" alt="image4">
+              <p class="footer__text">COOKIES & PRIVACY</p>
+            </div>
+          </section>
 
-          <footer>
-              <section class="top-footer">
-                <div class="nav__icon">
-                  <img src="components/img/image12.png" width="65" height="65" alt="image4">
-                  <p class="footer__text">CONTACT US</p>
-                </div>
-                <div class="nav__icon">
-                  <img src="components/img/image13.png" width="65" height="65" alt="image1">
-                  <p class="footer__text">FREE DELIVERY</p>
-                </div>
-                <div class="nav__icon">
-                  <img src="components/img/image14.png" width="65" height="65" alt="image2">
-                  <p class="footer__text">DELIVERY POLICY</p>
-                </div>
-                <div class="nav__icon">
-                  <img src="components/img/image15.png" width="65" height="65" alt="image3">
-                  <p class="footer__text">RETURNS POLICY</p>
-                  </div>
-              </section>
-                     
-              <section class="bottom-footer">
-                <div class="nav__icon">
-                  <img src="components/img/image16.png" width="65" height="65" alt="image4">
-                  <p class="footer__text">INFO</p>
-                </div>
-                <div class="nav__icon">
-                  <img src="components/img/image17.png" width="65" height="65" alt="image4">
-                  <p class="footer__text">SIZE GUIDE</p>
-                </div>
-                <div class="nav__icon">
-                  <img src="components/img/image18.png" width="65" height="65" alt="image4">
-                  <p class="footer__text">PAYMENT SECURITY</p>
-                </div>
-                <div class="nav__icon">
-                  <img src="components/img/image19.png" width="65" height="65" alt="image4">
-                  <p class="footer__text">COOKIES & PRIVACY</p>
-                </div>
-              </section>
-
-              <nav class="page__footer">
-              <h3 class="page-footer__header">FOLLOW US</h3>
-                <ul class="page-footer__nav">
-                  <li><i class="fab fa-instagram"></i></li>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                  <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-pinterest-p"></i></li>
-                  <li><i class="fab fa-youtube"></i></li>
-                  <li><i class="fab fa-spotify"></i></li>
-                </ul>
-                  <p>2020-2021 Vintageria Venezia</p>
-                  <p>Via Colombo 16, 30035 Mirano (VE), Italy</p>
-                  <p>IT04579320278</p>
-                  <p>Made with the Power of love by HCE</p>
-                  <p>Manage cookies</p>  
-              </nav>
-          </footer>
+          <nav class="page__footer">
+            <h3 class="page-footer__header">FOLLOW US</h3>
+              <ul class="page-footer__nav">
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-pinterest-p"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-spotify"></i></li>
+              </ul>
+                <p>2020-2021 Vintageria Venezia</p>
+                <p>Via Colombo 16, 30035 Mirano (VE), Italy</p>
+                <p>IT04579320278</p>
+                <p>Made with the Power of love by HCE</p>
+                <p>Manage cookies</p>  
+          </nav>
+        </footer>
     </body>
 </html>

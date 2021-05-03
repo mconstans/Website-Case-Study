@@ -75,14 +75,15 @@ a {
 
 .header2__font {
   font-family: "Aromatron-Regular";
-  font-size: 3.8rem;
+  font-size: 6vw;
+  color: black;
   font-weight:500;
   padding-left: 40px;
 }
 
 .header2__font--opposite {
   font-family: "Aromatron-Regular";
-  font-size: 3.8rem;
+  font-size: 6vw;
   color: var(--yellow);
   font-weight: 500;
 }
@@ -292,10 +293,6 @@ input[type=submit] {
   margin-top: 40px;
 }
 
-  /***
-  * Utilities
-  */
-  
 .container {
   padding: 2rem;
 }
@@ -331,28 +328,11 @@ input[type=submit] {
   margin: 0;
 }
 
-.component__code--orange {
-  border: 1px solid #ccc;
-  background: #FD5E08;
-  margin: 0;
-  display: flex;
-  overflow: hidden;
-}
 .hero__text {
   padding-left: 20px;
   padding-right: 65px;
 }
-.hero__image {
-  padding-top: 15px;
-}
-.product__section {
-  display: block;
-  font-family: "GreycliffCF-Regular";
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 10px;
-}
+
 
 .component__code:before,
 .component__img:before {
@@ -380,7 +360,6 @@ input[type=submit] {
   margin-bottom: 0;
   font-size: 1em;
   text-transform: uppercase;
-  background: var(--black);
   color: var(--white);
   padding: 0.5rem;
   top: 4.5rem;
@@ -393,6 +372,10 @@ input[type=submit] {
   grid-column-gap: 0;
 }
 
+.social__image {
+  width:100%;
+}
+
 .title {
   font-family: "GreycliffCF-Regular";
   font-size: 1.5rem;
@@ -403,25 +386,52 @@ input[type=submit] {
   * Homepage Styles
   **/
 
-  /**Nav styles **/
+ /**Nav styles **/
 
 
-  .header-inner {
+ .header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-inner__left {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    background: #fff;
-    width: 100%;
-    box-sizing: border-box;
+    align-items: center;
+}
+  
+  .component-page__nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .header-inner__right {
+    display: flex;
+    padding-top: 22px;
+    align-items: center;
+    height: 100%;
   }
 
 /**highlights section**/
 .highlights {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  background: white;
+  overflow: hidden;
 }
 
+.hightlights__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+
+.item__image--mod {
+  width: 95%;
+}
 /**product section styles **/
 
 .content {
@@ -459,35 +469,14 @@ input[type=submit] {
   justify-items: center;
 }
 
-/**section end**/
-
-
-.header-inner__left {
-    display: flex;
-    align-items: center;
-}
-  
-  .component-page__nav {
-    list-style: none;
-    display: flex;
-  }
-  
-  ul li {
-    width: 4vw;
-    height: 4vw;
-  }
-  
-  .header-inner__right {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
 
   /** Hero styling**/
 
   .hero__background {
     background: #FD5E08;
     display: flex;
+    overflow: hidden;
+    position: relative;
   }
 
   .hero__header1 {
@@ -503,25 +492,22 @@ input[type=submit] {
     max-width: 90%;
     height: auto;
     max-height: 90%;
+    padding: 15px;
+
+  }
+  .button-container {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
   }
 
 .hero-title {
   padding-bottom: 0;
 }
-
-/** check component page and delete if necessary
-
-  .component__8bit {
-    content: "CODE";
-    background: #000;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-around;
-  }
-
-**/
 
 
 /**bit section **/
@@ -547,12 +533,6 @@ align-self: center;
 width: 100%;
 }
 
-
-.button-container {
-  position: relative;
-  right: 50%;
-}
-
 .text-container {
   padding-top: 3vw;
   padding-left: 5vw;
@@ -563,6 +543,12 @@ width: 100%;
   width: 100%;
   height: 100%;
 }
+
+.footer {
+  background: black;
+  padding-left: 15px;
+}
+
 
 /**feature section**/
 

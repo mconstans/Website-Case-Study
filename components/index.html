@@ -20,13 +20,12 @@
 * http://www.fonts.com
 * http://www.myfonts.com
 * http://www.linotype.com
-*
 * -->
 <link rel="stylesheet" type="text/css" href="../MyFontsWebfontsKit.css">
 </head>
 <body class="component-page">
-      <h1 class="AromatronRegular">Web Design System</h1>
-      <h2 class="GreycliffCF-Bold">By Megan Constans</h2>
+      <h1>Web Design System</h1>
+      <h2>By Megan Constans</h2>
       <h3>Summary</h3>
       <p>
         This is a collection of components based on my study of the design system of the <a href="https://www.vintageria.it/">Vintageria Website.</a>
@@ -38,30 +37,31 @@
           <div class="component__img">
             <img src="img/Match.JPG" alt="main nav bar">
           </div>
-          <div class="component__code">
-            <nav class="main-nav">
-              <div class="nav-left">
-              <ul class="component-page__nav">
-                <li><i class="fas fa-bars"></i></li>
-                <li>SHOP</li>
-                <li><i class="fas fa-search"></i></li>
-              </ul>
-              </div>
-              <a class="link" href="#!">
+          <div class="header-inner">
+            <div class="header-inner__left">
+             <nav>
+                <ul class="component-page__nav">
+                    <li><i class="fas fa-bars"></i></li>
+                    <li>SHOP</li>
+                    <li><i class="fas fa-search"></i></li>
+                  </ul>
+            </nav>
+            </div>
+            <a href="#!">
                 <h1 class="vintageria-logo">
                   <img src="img/image21.png"  width="160" height="50" alt="Vintageria Logo">
                 </h1>
-              </a>
-              <div class="nav-right">
-              <ul class="component-page__nav">
-                <li><i class="fas fa-shopping-cart"></i></li>
-                <li><i class="far fa-heart"></i></li>
-                <li>LOGIN</li>
-                <li><i class="far fa-smile"></i></li> 
-              </ul>
-              </div>
-            </nav>
-          </div>
+            </a>
+            <div class="header-inner__right">
+                <ul class="component-page__nav">
+                    <li><i class="far fa-smile"></i></li>
+
+                    <li>LOGIN</li>
+                    <li><i class="far fa-heart"></i></li>
+                    <li><i class="fas fa-shopping-cart"></i></li> 
+                  </ul>
+            </div>
+        </div>
           </article>
         </section>
 
@@ -70,19 +70,25 @@
           <div class="component__img">
             <img src="img/image22.png" width="600" alt="hero">
           </div>
-          <div class="component__code--orange">
-            <div class="hero__text">
-            <h1 class="header__color">Vintage <br> <span class="text__white">is the new <br> New</span></h1>
-            <h3 class="header3__font">We have the coolest <br>
-              store in <b>Venice</b>, come visit!</h3>
+          <div class="hero__background">
+            <div class="text-container">
+              <div class="hero__title">
+                <h1 class="AromatronRegular">Vintage <br> <span class="text__white">is the new <br> New</span></h1>
+              </div>
+              <div class="copy">
+                <h2 class="GreycliffCFRegular">We have the coolest <br>
+                 store in <b>Venice</b>, come visit!</h2>
+              </div>
             </div>
-            <div class="hero__image">
-            <img src="img/image23.png" width="300" alt="hero image">
+              <div class="canvas-container">
+                <img class="hero__image" src="img/image23.png" alt="hero image">
+              </div>
+            <div class="button-container">  
+                <p>
+                  <a href="#!" class="button--primary">OUR SHOP IN VENICE</a>
+                </p>
             </div>
           </div>
-          <p>
-            <a href="#!" class="button--primary">OUR SHOP IN VENICE</a>
-          </p>
         </article>
 
         <article>
@@ -101,70 +107,73 @@
           <img src="img/featured-product__card.PNG" alt="featured product card">
           <img src="img/featured-product2__card.PNG" alt="featured product number 2">
         </div>
-        <div class="component__code">
-          <div class="card__container">
-          <article class="card">
-          <img src="img/image24.png" width="365" height="365" alt="product image">
-          <h3 class="card__title">Carhartt Tank Top <div class="price__regular">25.00&euro;</div></h3>
-          </article>
-
-          <div class="button__background">
-          <p>
-            <a href="#!" class="button">ALL PRODUCTS</a>
-          </p>
-          </div>  
-          <div class="card__container">
-          <article class="card">
-          <img src="img/image25.png" width="365" height="365" alt="product image">
-          <h3 class="card__title">Ripzone Aloha Shirt <div class="price__regular">25.00&euro;</div></h3>
-          </article>
-
-          <div class="button__background">
-          <p>
-            <a href="#!" class="button">NEW ARRIVALS</a>
-          </p>
-          </div>
-        </div>
-        </div>
-        </div>
-      
       </section>
+        <div class="component__code">
+          <div class="highlights">
+            <div class="hightlights__container">  
+            <div class="card--card">
+              <article class="card">
+              <img class="item__image--mod" src="img/image24.png" alt="product image">
+              <h3 class="card__title">Carhartt Tank Top <span class="price__regular">25.00&euro;</span></h3>
+              </article>
       
-      <article>
+              <div class="button__background">
+              <p>
+                <a href="#!" class="button">ALL PRODUCTS</a>
+              </p>
+              </div>
+            </div>
+            <div class="card--card">
+              <article class="card">
+                <img class="item__image--mod" src="img/image25.png" alt="product image">
+                <h3 class="card__title">Ripzone Aloha Shirt <span class="price__regular">25.00&euro;</span></h3>
+              </article>
+                <div class="button__background">
+                <p>
+                  <a href="#!" class="button">NEW ARRIVALS</a>
+                </p>
+                </div>
+            </div>
+            </div>
+          </div>
+      
+      <div>
         <h3 class="component__name">h2, h3, h4</h3>
         <div class="component__img">
           <img src="img/product_section_header.JPG" alt="header">
         </div>
-        <div class="component__code--black">
+        <div class="header__background">
           <h2 class="header2__font--opposite">Cool sh*t <br> for cool people</h2>
         </div>
-      </article>
-
-      <article>
-        <h3 class="component__name">Product Categories</h3>
-        <div class="component__img">
-          <img src="img/product_section_cards.JPG" alt="products available">
+        <div class="content">
+          <div class="items-description">
+              <div class="brand-items">
+              <img class="item__image" src="img/image26.png" alt=" image1">
+                <a href="#!">
+                <p class="product__text">Denim Jackets</p>
+                </a>
+              </div>
+            <a href="#!">
+              <div class="brand-items">
+                <img class="item__image" src="img/image27.png" alt="image2">
+                <p class="product__text">Hoodies, Sweatshirts & <br> Track Jackets</p>
+                </div>
+            </a>
+            <a href="#!">
+              <div class="brand-items">
+              <img class="item__image" src="img/image28.png" alt=" image3">
+              <p class="product__text">Denim Jackets</p>
+              </div>
+            </a>
+            <a href="#!">
+              <div class="brand-items">
+                <img class="item__image" src="img/image29.png" alt="image4">
+                <p class="product__text">Hoodies, Sweatshirts & <br> Track Jackets</p>
+              </div>
+            </a>
+          </div>
+          </div>
         </div>
-
-        <div class="component__8bit">
-         <div class="product__section">
-         <img src="img/image26.png" width="200" height="200" alt="image1">
-         <p class="product__text">Denim Jackets</p>
-         </div>
-         <div class="product__section">
-         <img src="img/image27.png" width="200" height="200" alt="image2">
-         <p class="product__text">Hoodies, Sweatshirts & <br> Track Jackets</p>
-         </div>
-         <div class="product__section">
-         <img src="img/image28.png" width="200" height="200" alt="image3">
-         <p class="product__text">Adidas</p>
-         </div>
-         <div class="product__section">
-         <img src="img/image29.png" width="200" height="200" alt="image4">
-         <p class="product__text">Levi's</p>
-         </div>
-        </div>
-      </article>
 
       <section>
         <h2 class="component-page__section-heading">Feature article</h2>
@@ -174,22 +183,24 @@
             <img src="img/featured_article.JPG" alt="feature">
           </div>
 
-          <div class="component__8bit">
-            <div class="bit__container">
-            <h1 class="feature__header">8bitVintageAnimals</h1>
-            <h2 class="feature__header2">USE OUR INSTAGRAM FILTER <br>
-              AND GET 10 OFF!</h2>
+          <div class="bit__container">
+            <div class="bit__section">
+            <h3 class="feature__header">8bitVintageAnimals</h3>
+            <h3 class="feature__header2">USE OUR INSTAGRAM FILTER <br>
+                AND GET 10&euro; OFF!</h3>
             <p class="text">First of all, follow us on Instragram. Then <br>
-              apply our filter to one of your stories or <br>
-              pictures and mention our <br>
-              profile @vintageria.it in it. We will <br>
-              reward you with a 10&euro; <br>
-              discount coupon!</p>
-              <p>
-                <a href="#!" class="button--yellow">INSTAGRAM, NOW!</a>
-              </p>
+                apply our filter to one of your stories or <br>
+                pictures and mention our <br>
+                profile @vintageria.it in it. We will <br>
+                reward you with a 10&euro; <br>
+                discount coupon!</p>
+            <p>
+              <a href="#!" class="button--yellow">INSTAGRAM, NOW!</a>
+            </p>
             </div>
-            <img src="img/8bit.PNG" width="300" height="300" alt="8bit style image">
+              <div class="image__container">
+                <img class="bit__image" src="img/8bit.PNG" alt="8bit style image">
+             </div>
           </div>
         </article>
       </section>
@@ -198,15 +209,15 @@
           <img src="img/roarrrr.png" alt="header image">
           <h2 class="header2__font">Roarrrrr</h2>
           <section class="social-media__photos">
-              <img height="210" width="210" src="img/image1.jpg" alt="image1">
-              <img height="210" width="210" src="img/image2.jpg" alt="image2">
-              <img height="210" width="210" src="img/image3.jpg" alt="image3">
-              <img height="210" width="210" src="img/image4.jpg" alt="image4">
-              <img height="210" width="210" src="img/image5.jpg" alt="image5">
-              <img height="210" width="210" src="img/image6.jpg" alt="image6"> 
-              <img height="210" width="210" src="img/image7.jpg" alt="image7">
-              <img height="210" width="210" src="img/image8.jpg" alt="image8">
-           </section>
+            <img class="social__image" src="img/image1.jpg" alt="image1">
+            <img class="social__image" src="img/image2.jpg" alt="image2">
+            <img class="social__image" src="img/image3.jpg" alt="image3">
+            <img class="social__image" src="img/image4.jpg" alt="image4">
+            <img class="social__image" src="img/image5.jpg" alt="image5">
+            <img class="social__image" src="img/image6.jpg" alt="image6"> 
+            <img class="social__image" src="img/image7.jpg" alt="image7">
+            <img class="social__image" src="img/image8.jpg" alt="image8">
+          </section>
            <h3 class="title">@vintageria.it</h3>
            <h3 class="title"><i class="fab fa-instagram"></i></h3>
            </div>
@@ -230,44 +241,45 @@
               <div class="component__img">
                 <img src="img/image11.png" alt="products available">
               </div>
+            </article>
     
             <div class="footer__nav">
-            <section class="top-footer">
-            <div class="nav__icon">
-                <img src="img/image12.png" width="65" height="65" alt="image4">
-                <p class="footer__text">CONTACT US</p>
+              <section class="top-footer">
+                <div class="nav__icon">
+                    <img src="img/image12.png" width="65" height="65" alt="image4">
+                    <p class="footer__text">CONTACT US</p>
                 </div>
-             <div class="nav__icon">
-             <img src="img/image13.png" width="65" height="65" alt="image1">
-             <p class="footer__text">FREE DELIVERY</p>
-             </div>
-             <div class="nav__icon">
-             <img src="img/image14.png" width="65" height="65" alt="image2">
-             <p class="footer__text">DELIVERY POLICY</p>
-             </div>
-             <div class="nav__icon">
-             <img src="img/image15.png" width="65" height="65" alt="image3">
-             <p class="footer__text">RETURNS POLICY</p>
-             </div>
-             </section>
-             <section class="bottom-footer">
-             <div class="nav__icon">
-             <img src="img/image16.png" width="65" height="65" alt="image4">
-             <p class="footer__text">INFO</p>
-             </div>
-             <div class="nav__icon">
-              <img src="img/image17.png" width="65" height="65" alt="image4">
-              <p class="footer__text">SIZE GUIDE</p>
-              </div>
-            <div class="nav__icon">
-              <img src="img/image18.png" width="65" height="65" alt="image4">
-              <p class="footer__text">PAYMENT SECURITY</p>
-            </div>
-            <div class="nav__icon">
-              <img src="img/image19.png" width="65" height="65" alt="image4">
-              <p class="footer__text">COOKIES & PRIVACY</p>
-            </div>
-            </section>
+                <div class="nav__icon">
+                <img src="img/image13.png" width="65" height="65" alt="image1">
+                <p class="footer__text">FREE DELIVERY</p>
+                </div>
+                <div class="nav__icon">
+                <img src="img/image14.png" width="65" height="65" alt="image2">
+                <p class="footer__text">DELIVERY POLICY</p>
+                </div>
+                <div class="nav__icon">
+                <img src="img/image15.png" width="65" height="65" alt="image3">
+                <p class="footer__text">RETURNS POLICY</p>
+                </div>
+                </section>
+                <section class="bottom-footer">
+                <div class="nav__icon">
+                <img src="img/image16.png" width="65" height="65" alt="image4">
+                <p class="footer__text">INFO</p>
+                </div>
+                <div class="nav__icon">
+                  <img src="img/image17.png" width="65" height="65" alt="image4">
+                  <p class="footer__text">SIZE GUIDE</p>
+                  </div>
+                <div class="nav__icon">
+                  <img src="img/image18.png" width="65" height="65" alt="image4">
+                  <p class="footer__text">PAYMENT SECURITY</p>
+                </div>
+                <div class="nav__icon">
+                  <img src="img/image19.png" width="65" height="65" alt="image4">
+                  <p class="footer__text">COOKIES & PRIVACY</p>
+                </div>
+              </section>
             </div>
 
             <h3 class="component__name">Page Footer</h3>
@@ -294,6 +306,6 @@
                </div>
               </nav>
             </div>
-          </article>
+          </div>
   </body>
 </html>
