@@ -1,14 +1,15 @@
+@import url("//hello.myfonts.net/count/3e437c");
+  
+@font-face {
+  font-family: "GreycliffCF-Regular";
+  src: url('webFonts/GreycliffCFRegular/font.woff2') format('woff2'), url('webFonts/GreycliffCFRegular/font.woff') format('woff');
+}
 
 @import url("//hello.myfonts.net/count/3da89f");
   
 @font-face {
   font-family: "GreycliffCF-Bold";
   src: url('webFonts/GreycliffCFBold/font.woff2') format('woff2'), url('webFonts/GreycliffCFBold/font.woff') format('woff');
-}
-
-@font-face {
-  font-family: "GreycliffCF-Regular";
-  src: url('webFonts/GreycliffCFRegular/font.woff2') format('woff2'), url('webFonts/GreycliffCFRegular/font.woff') format('woff');
 }
 
 
@@ -59,7 +60,9 @@ body {
 /***
   *Headers & various stylings
   */
-
+a {
+  text-decoration: none;
+}
 
 .header__color {
   background: #FD5E08;
@@ -92,23 +95,24 @@ body {
 
 .feature__header {
   font-family: "GreycliffCF-Bold";
-  font-size: 3rem;
+  font-size: 5vw;
   color: #FDEB17;
-  background: #000;
   text-align: center;
 }
 
 .feature__header2 {
-  font-family: "GreycliffCF-Bold";
+  font-family: "GreycliffCF-Regular";
+  font-size: 2vw;
+  font-weight: normal;
+  line-height: 1.2em;
   color: white;
-  background: #000;
   text-align: center;
 }
 
 .text {
-  font-family: "GreycliffCF-Bold";
+  font-family: "GreycliffCF-Regular";
   color: white;
-  font-size: 1.0rem;
+  font-size: 2vw;
   line-height: 1.5em;
   text-align: center;
 }
@@ -341,16 +345,13 @@ input[type=submit] {
 .hero__image {
   padding-top: 15px;
 }
-
-
-.bit__container {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-
-.product__text {
-  padding-top: 0;
+.product__section {
+  display: block;
+  font-family: "GreycliffCF-Regular";
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
 }
 
 .component__code:before,
@@ -414,28 +415,57 @@ input[type=submit] {
     width: 100%;
     box-sizing: border-box;
   }
-  
-  .component__8bit {
-    content: "CODE";
-    background: #000;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
-  }
 
-  .product__section {
-    display: block;
-    font-family: "GreycliffCF-Regular";
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
-  }
+/**highlights section**/
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  .header-inner__left {
+/**product section styles **/
+
+.content {
+  background: #000;
+  overflow: hidden;  
+}
+
+.items-description {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item__image {
+  width:100%;
+}
+
+.item__image--mod {
+  width: 95%;
+}
+
+.brand-items {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.product__text {
+  font-family: "GreycliffCF-Regular";
+  color: white;
+  padding:0;
+}
+
+.product__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+/**section end**/
+
+
+.header-inner__left {
     display: flex;
     align-items: center;
-  }
+}
   
   .component-page__nav {
     list-style: none;
@@ -479,6 +509,44 @@ input[type=submit] {
 .hero-title {
   padding-bottom: 0;
 }
+
+/** check component page and delete if necessary
+
+  .component__8bit {
+    content: "CODE";
+    background: #000;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+
+**/
+
+
+/**bit section **/
+
+.bit__container {
+  background: #000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.bit__section {
+text-align: center;
+padding: 60px;
+}
+
+.image__container {
+align-self: center;
+}
+
+.bit__image {
+width: 100%;
+}
+
 
 .button-container {
   position: relative;
